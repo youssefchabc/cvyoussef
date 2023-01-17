@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<style>
+    :root {
+        --primaryColor: rgb(10, 106, 147);
+        --SecondaryColor: #26228d;
+        --LightColor: #22282a;
+        --bgColor1: #fff;
+        --bgColor2: #b8c6db;
+        /*#22282a*/
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 16px;
+        color: var(--LightColor);
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+        background-color: var(--bgColor2);
+    }
+
+    .quizz-container {
+        background-color: var(--bgColor1);
+        border-radius: 10px;
+        box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+        width: 600px;
+        overflow: hidden;
+    }
+
+    .quizz-header {
+        padding: 4rem;
+
+    }
+
+    h2 {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    ul li {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    ul li label {
+        cursor: pointer;
+    }
+
+    button {
+        background-color: var(--primaryColor);
+        color: var(--LightColor);
+        font-weight: bold;
+        display: block;
+        padding: 1.3rem;
+        font-size: 18px;
+        border: 2px solid transparent;
+        width: 100%;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    button:hover {
+        background-color: rgb(13, 99, 136);
+        border: 2px solid var(--primaryColor);
+    }
+</style>
+
+<body>
+
+    <div class="quizz-container" id="quizz">
+        <div class="quizz-header">
+            <h2 id="question">Question 1</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Answer</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">Answer</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">Answer</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label for="d" id="d_text">Answer</label>
+                </li>
+            </ul>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+    </div>
+
+
+</body>
+<script src="../javascript/java.js"></script>
+
+</html>
